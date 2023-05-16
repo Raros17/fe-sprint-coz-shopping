@@ -28,6 +28,11 @@ a {
 }
 /*이 아래가 내가 작성*/
 
+.wrapper {
+  height: 100%;
+  position: relative;
+}
+
 header {
   background-color: #fff;
   width: 100%;
@@ -130,6 +135,7 @@ footer {
   position: absolute;
   bottom: 0;
   border-top: 1px solid #e1e1e1;
+  background-color: #452CDD;
 }
 
 
@@ -145,6 +151,7 @@ footer {
   height: 210px;
   border-radius: 10px;
   position: relative;
+  margin-bottom: 10px;;
 }
 
 .product-products .product-image .fa-star {
@@ -168,5 +175,17 @@ bottom: 10px;
 .product-products .product-inform div .product-percent {
   color: #452CDD;
   ;
-  
+}
+
+.product-products .product-inform .product-price {
+  display: flex;
+  justify-content: end;
+}
+.product-products .product-inform .product-detail {
+  display: flex;
+  justify-content: start;
+}
+.product-products .product-inform .customer-count {
+  display: flex;
+  justify-content: end;
 }

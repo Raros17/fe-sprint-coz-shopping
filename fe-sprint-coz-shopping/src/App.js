@@ -11,7 +11,7 @@ import Bookmark from './Pages/Bookmark';
 const App = () =>{
   return (
     <BrowserRouter>
-    <div>
+    <div className='wrapper'>
       <Header/>
       <Routes>
         <Route path="/" element={<Main/>}></Route>
