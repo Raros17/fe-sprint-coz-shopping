@@ -1,8 +1,11 @@
 import React from 'react';
+import MainStyle from '../Components/MainStyle'
 
 const Main = () => {
     return (
-        <div></div>
+        <>
+         <MainStyle/>   
+        </>
     )
 }
 
