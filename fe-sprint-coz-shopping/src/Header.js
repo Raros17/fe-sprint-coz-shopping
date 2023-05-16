@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Hamburger from './Components/Hamburger'
+import Hamburger from './Components/Hamburger';
 const Header = () => {
+    const [nav, setNav] = useState(false);
+    const hamburgerOpen = () => {
+        nav === true
+        ? setNav(false)
+        : setNav(true)
+    }
     return (
         <header>
-            <div id="logo-title" Link to="./"><img id="logo" src={'로고.png'}/>COZ Shopping</div>
-            <div id="hamburger"><i class="fa-solid fa-bars"></i></div>
-            <Hamburger />
+            <Link to="./">
+            <div id="logo-title"><img id="logo" src={'로고.png'}/>COZ Shopping</div></Link>
+            <div id="hamburger" onClick={hamburgerOpen}><i class="fa-solid fa-bars"></i></div>
+            {nav ===true?<Hamburger />: null}
         </header>
     )
 }
