@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import {Routes, Route, BrowserRouter } from 'react-router-dom';
-import Header from './Header';
-import Footer from './Footer';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
 import Main from './Pages/Main';
 import List from './Pages/List';
 import Bookmark from './Pages/Bookmark';

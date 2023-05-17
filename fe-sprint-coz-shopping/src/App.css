@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;800&display=swap');
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,7 +17,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Inter', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
 
 a {
@@ -27,6 +25,10 @@ a {
   color: inherit; 
 }
 /*이 아래가 내가 작성*/
+
+li {
+  list-style: none;
+}
 
 .wrapper {
   height: 100%;
@@ -138,7 +140,6 @@ footer {
   position: absolute;
   bottom: 0;
   border-top: 1px solid #e1e1e1;
-  background-color: #452CDD;
 }
 
 
@@ -247,4 +248,50 @@ bottom: 10px;
   font-size: 24px;
   font-weight: 800;
   margin-bottom: 17px;
+}
+
+.productslist-section {
+  width: 100%;
+  height: 100vh;
+}
+
+.filterbuttons-area {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.filterbuttons-area ul {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 24px;
+}
+.filterbuttons-area ul li {
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 18px;
+  cursor: pointer;
+}
+.filterbuttons-area ul li img{
+  width: 82px;
+  height: 82px;
+  margin-bottom: 6.5px;
+}
+
+.filterbuttons-area ul li .filter-selected {
+  color:#452CDD;
+  position: relative;
+}
+
+.filterbuttons-area ul li .filter-selected::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #452CDD;
+  bottom: -3px;
+  left: 0;
 }
