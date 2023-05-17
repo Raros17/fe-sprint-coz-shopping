@@ -31,6 +31,7 @@ a {
 .wrapper {
   height: 100%;
   position: relative;
+
 }
 
 header {
@@ -53,6 +54,7 @@ header #logo-title {
   font-size: 25px;
   font-weight: 700;
   cursor: pointer;
+  display: flex;
 }
 
 header #logo-title img{
@@ -236,4 +238,13 @@ bottom: 10px;
 
 .modal-area .modal-bgimage .fa-star {
   margin-right: 5px;
+}
+.mainpage-section {
+  margin: 0 76px;
+}
+
+.mainpage-section .main-title {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 17px;
 }

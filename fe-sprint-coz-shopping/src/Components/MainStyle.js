@@ -9,7 +9,6 @@ import Modal from './Modal'
 const MainStyle = () => {
     return (
         <>
-        <Modal />
         <Style01/>
         <Style02/>
         <Style03/>
