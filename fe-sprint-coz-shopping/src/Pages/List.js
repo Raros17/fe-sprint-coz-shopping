@@ -1,8 +1,11 @@
 import React from 'react';
+import Filterbuttons from '../Components/Filterbuttons';
 
 const List = () => {
     return (
-        <div></div>
+        <section className='productslist-section'>
+        <Filterbuttons/>
+        </section>
     )
 }
 
