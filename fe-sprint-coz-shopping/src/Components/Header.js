@@ -12,7 +12,7 @@ const Header = () => {
         <header>
             <Link to="./">
             <div id="logo-title"><img id="logo" src={ require('../Image/로고.png') }></img>COZ Shopping</div></Link>
-            <div id="hamburger" onClick={hamburgerOpen}><i class="fa-solid fa-bars"></i></div>
+            <div id="hamburger" onClick={hamburgerOpen}><i className="fa-solid fa-bars"></i></div>
             {nav ===true?<Hamburger />: null}
         </header>
     )

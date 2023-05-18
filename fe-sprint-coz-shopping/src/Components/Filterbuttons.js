@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Filterbuttons = () => {
+const Filterbuttons = () => {    
     return (
         <section className='filterbuttons-area'>
             <ul>
