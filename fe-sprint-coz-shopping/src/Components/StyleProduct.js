@@ -1,20 +1,21 @@
 import React from 'react';
 import '../Components/Component.css';
-const Style01 = () => {
+const StyleProduct = (item) => {
+    
     return (
         <>
-        <div className='product-products'>
-            <div className='product-image'><div className='여기이미지'></div><i className="fa-solid fa-star"></i></div>
+        <div className='product-products'>{/*눈물...왜 이미지 안뜰까요?*/}      
+            <div className='product-image'><img src={item.image_url}/><i className="fa-solid fa-star"></i></div>
             <div className='product-inform'>
                 <div>
-                    <span className='product-name'>상품이름</span>
-                    <span className='product-percent'>00%</span>
+                    <span className='product-name'>{item.title}</span>
+                    <span className='product-percent'>{item.discountPercentage}%</span>
                 </div>
-                <span className='product-price'>상품가격</span>
+                <span className='product-price'>{item.price}원</span>
             </div>
-        </div>
+            </div>
         </>
     )
 }
 
-export default Style01;
+export default StyleProduct;

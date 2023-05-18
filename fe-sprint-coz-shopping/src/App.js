@@ -11,15 +11,15 @@ import Bookmark from './Pages/Bookmark';
 const App = () =>{
   return (
     <BrowserRouter>
-    <div className='wrapper'>
-      <Header/>
+    <Header/>
+    <div className='wrapper'>  
       <Routes>
         <Route path="/" element={<Main/>}></Route>
         <Route path="/products/list" element={<List/>}></Route>
         <Route path="/bookmark" element={<Bookmark/>}></Route>
-      </Routes>
-      <Footer/>
+      </Routes>  
     </div>
+    <Footer/>
     </BrowserRouter>
   );
 }
