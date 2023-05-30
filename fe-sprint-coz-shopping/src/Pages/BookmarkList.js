@@ -1,6 +1,6 @@
 import React from 'react';
 import Filterbuttons from '../Components/Filterbuttons';
-const Bookmark = () => {
+const BookmarkList = () => {
     return (
         <section className='productslist-section'>
         <Filterbuttons/>
@@ -8,4 +8,4 @@ const Bookmark = () => {
     )
 }
 
-export default Bookmark;
+export default BookmarkList;
